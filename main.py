@@ -5,10 +5,21 @@ buying_of_prod = {
 }
 print("Lista zakupów", "\n")
 
-for shop in buying_of_prod:
-    print(f"Idę do {shop.capitalize()}", "i kupuję tam:", (buying_of_prod[shop]))
-   
+for (shop, items) in buying_of_prod.items():
+    items = ",".join(items)
+    items = items.title()
+    print(f"Idę do {shop.capitalize()}", "i kupuję tam:", items)
+    
+
 all_products = 0
 for values in buying_of_prod.values():
     all_products += len(values)
 print("W sumie kupuję:{} produktów".format(all_products))
+
+"""
+for (a, b) in buying_of_prod.items():
+    a = a.capitalize()
+    b = " ".join(b)
+    b = b.title()
+    print("Idę do", a, "i kupuję tam", b)
+"""
