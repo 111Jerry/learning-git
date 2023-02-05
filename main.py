@@ -4,6 +4,11 @@ buying_of_prod = {
     "warzywniaka": ["marchew", "seler", "rukola"]
 }
 print("Lista zakupów", "\n")
+
 for shop in buying_of_prod:
     print(f"Idę do {shop.capitalize()}", "i kupuję tam:", (buying_of_prod[shop]))
-print("W sumie kupuję:", len(buying_of_prod["piekarni"]) + len(buying_of_prod ["warzywniaka"]), "produktów")
+   
+all_products = 0
+for values in buying_of_prod.values():
+    all_products += len(values)
+print("W sumie kupuję:{} produktów".format(all_products))
