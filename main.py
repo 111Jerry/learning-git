@@ -17,9 +17,5 @@ for values in buying_of_prod.values():
 print("W sumie kupuję:{} produktów".format(all_products))
 
 """
-for (a, b) in buying_of_prod.items():
-    a = a.capitalize()
-    b = " ".join(b)
-    b = b.title()
-    print("Idę do", a, "i kupuję tam", b)
+print("Dopisuje coś jak drugi programista na próbę"
 """
