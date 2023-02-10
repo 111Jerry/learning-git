@@ -19,4 +19,5 @@ print("W sumie kupuję:{} produktów".format(all_products))
 """
 print("Dopisuje coś jak drugi programista na próbę"
 print("Dodaję kolejne zmiany")
+print("I jeszcze jedną, zgodnie z poleceniem")
 """
